@@ -7,10 +7,7 @@ const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
 
 // Load API keys from environment variables
-const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
-const GOOGLE_CX = process.env.GOOGLE_CX;
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const { GOOGLE_API_KEY, GOOGLE_CX, OPENAI_API_KEY, GEMINI_API_KEY } = process.env.GOOGLE_API_KEY;
 
 // Get command-line arguments using minimist)
 const args = minimist(process.argv.slice(2), {
